@@ -14,6 +14,7 @@ public class Punto2D {
 
     private double y;
 
+    public boolean  s;
     public Punto2D() {
     }
 

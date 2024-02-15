@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.puntosfxv2.FXMLPuntosController">
+   <children>
+      <Canvas fx:id="idCanvas" height="316.0" layoutX="14.0" layoutY="74.0" onMouseClicked="#getCoordenada" width="578.0" />
+      <Label fx:id="idLabel1" layoutX="209.0" layoutY="27.0" text="Get Coordenates">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="idTextArea1" layoutX="640.0" layoutY="27.0" prefHeight="316.0" prefWidth="249.0" />
+      <Button layoutX="708.0" layoutY="360.0" mnemonicParsing="false" onAction="#mostrarPunto" text="Mostrar Lista" />
+      <MenuBar fx:id="idMenuBar" layoutY="9.0" prefHeight="37.0" prefWidth="71.0">
+        <menus>
+          <Menu fx:id="idMenu1" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="idMenuItem1" mnemonicParsing="false" onAction="#guardarArchivo" text="Guardar Archivo" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
